@@ -657,6 +657,51 @@ mapping_table = {
         'valid_params' : ['ids'],
         'method': 'DELETE',
     },
+  
+    # Help Center
+    'list_categories': {
+        'path': '/help_center/categories.json',
+        'method': 'GET',
+    },
+  
+    'show_category': {
+        'path': '/help_center/categories/{{category_id}}.json',
+        'method': 'GET',
+    },
+  
+    'list_category_sections': {
+        'path': '/help_center/categories/{{category_id}}/sections.json',
+        'method': 'GET',
+    },
+  
+    'show_section': {
+        'path': '/help_center/sections/{{section_id}}.json',
+        'method': 'GET',
+    },
+  
+    'list_category_articles': {
+        'path': '/help_center/categories/{{category_id}}/articles.json',
+        'valid_params': ['include'],
+        'method': 'GET',
+    },
+  
+    'list_section_articles': {
+        'path': '/help_center/sections/{{section_id}}/articles.json',
+        'method': 'GET',
+    },
+  
+    'list_articles': {
+        'path': '/help_center/articles.json',
+        'method': 'GET',
+    },
+  
+    'show_article': {
+        'path': '/help_center/articles/{{article_id}}.json',
+        'method': 'GET',
+    },
+  
+  
+
 }
 
 # Patch mapping table with correct HTTP Status expected
